@@ -1,0 +1,45 @@
+main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+/*Home page section background stlyes*/
+.bg-texture {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.bg-image {
+    background-image: url('../images/section-two-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.89);
+}
+.bg-color {
+    background-color: $c-secondary;
+}
+/*Home page main button stlye*/
+.primary-btn {
+    border: none;
+    background-color: $c-accient;
+    color: $c-wihte;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    text-align: right;
+    cursor: pointer;
+    z-index: 5;
+    
+    > p {
+        text-align: left;
+        font-size: 1.1rem;
+        margin: 0 0 35px 10px;
+        line-height: 1.5;
+    }
+
+    > small {
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+}

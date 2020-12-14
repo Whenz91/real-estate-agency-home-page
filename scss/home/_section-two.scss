@@ -1,0 +1,22 @@
+.section-two {
+    position: relative;
+    width: 100%;
+    min-height: 20em;
+
+    > .primary-btn {
+        bottom: 3em;
+        left: 55%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-two > .primary-btn {
+        bottom: 0;
+        left: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-two > .primary-btn {
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.section-four {
+    width: 100%;
+    padding-top: 15em;
+    position: relative;
+    z-index: 5;
+}
+.gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+        width: 500px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-four {
+        padding-top: 8em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery {
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

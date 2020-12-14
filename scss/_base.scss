@@ -1,0 +1,50 @@
+
+// colors
+$c-wihte: #ffffff;
+$c-secondary: #f0f0f0;
+$c-primary: #565e6a;
+$c-accient: #363f48;
+$c-black: #141414;
+$c-gray-light: #eeeff1;
+
+//fonts
+$f-primary: 'Noto Serif', serif;
+$f-secondary: 'Roboto', sans-serif;
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $f-secondary;
+    font-size: 16px;
+    color: $c-black;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3 {
+    font-family: $f-primary;
+    margin: 0;
+    font-weight: 300;
+}
+h1 {
+    font-size: 3rem;
+    color: $c-primary;
+}
+h2 {
+    color: $c-black;
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

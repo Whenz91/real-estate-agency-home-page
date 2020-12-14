@@ -1,0 +1,123 @@
+.section-one {
+    position: relative;
+    width: 100%;
+    min-height: 80em;
+}
+.floating-box {
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-bottom: 100px;
+    background-color: $c-secondary;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    
+    > img {
+        display: block;
+        width: 500px;
+        height: auto;
+        margin: 25px 25px 25px 50%;
+    }
+}
+.content-card {
+    width: 50%;
+    height: 500px;
+    background-color: $c-wihte;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    padding: 50px 70px;
+
+    ul {
+        list-style: none;
+        margin: 40px 0 0;
+        padding: 0;
+        
+        li {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin-bottom: 25px;
+        
+            p {
+                margin: 0;
+                small {
+                    display: block;
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+}
+.card-title {
+    display: inline-block;
+    width: 59%;
+}
+.card-link {
+    display: inline-block;
+    width: 39%;
+    text-align: right;
+    text-transform: uppercase;
+    color: $c-black;
+}
+.list-date {
+    color: $c-primary;
+    font-family: $f-primary;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 1024px) {
+    .section-one {
+        min-height: 60em;
+    }
+    .floating-box {
+        > img {
+            width: 400px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-one {
+        min-height: 45em;
+    }
+    .floating-box {
+        width: 100%;
+        > img {
+            width: 350px;
+        }
+    }
+    .content-card {
+        width: 65%;
+        left: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .floating-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        top: 0;
+        left: 0;
+        
+        > img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+    .content-card {
+        width: 90%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        ul {
+            
+            li {
+                grid-template-columns: 130px 1fr;
+            }
+        }
+    }
+}

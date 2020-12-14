@@ -1,0 +1,16 @@
+{
+  "name": "real-estate-agency-website",
+  "version": "1.0.0",
+  "description": "A simple real estate agency website template. Make with html, sass, vanilla js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoltan Miko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
